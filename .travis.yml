@@ -1,0 +1,7 @@
+language: go
+go: 
+ - 1.5.3
+before_install:
+ - go get github.com/stretchr/testify/assert
+script:
+ - go test -v ./roman
