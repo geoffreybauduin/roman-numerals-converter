@@ -45,7 +45,7 @@ func TestSubstractions (t *testing.T) {
     assert.Equal(t, "XMIV", IntToRoman(994), "994 should be XMIV")
     assert.Equal(t, "IM", IntToRoman(999), "999 should be IM")
     assert.Equal(t, "MDCXCIII", IntToRoman(1693), "1693 should be MDCXCIII")
-    assert.Equal(t, "MV̅DCCXLIV", IntToRoman(4744), "4744 should be MV̅DCCXLIV")
+    assert.Equal(t, "I̅V̅DCCXLIV", IntToRoman(4744), "4744 should be I̅V̅DCCXLIV")
     assert.Equal(t, "XX̅IV", IntToRoman(9994), "9994 should be XX̅IV")
     assert.Equal(t, "C̅M̅L̅X̅X̅X̅V̅MMCCXXXI", IntToRoman(987231), "987231 should be C̅M̅L̅X̅X̅X̅V̅MMCCXXXI")
 }

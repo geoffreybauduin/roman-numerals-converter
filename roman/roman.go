@@ -12,6 +12,16 @@ var sorted_substract []int = []int{
     1000000, 100000, 10000, 1000, 100, 10, 1,
 }
 
+var substract_data map[int]string = map[int]string{
+    1000000: "M̅",
+    100000: "C̅",
+    10000: "X̅",
+    1000: "I̅",
+    100: "C",
+    10: "X",
+    1: "I",
+}
+
 var data map[int]string = map[int]string{
     1000000: "M̅",
     500000: "D̅",
@@ -41,7 +51,7 @@ func check_direct (nbr int) (bool, int, string) {
     for _, value := range sorted_data {
         for _, cmp_value := range sorted_substract {
             if value - cmp_value == nbr {
-                return true, 0, data[cmp_value] + data[value]
+                return true, 0, substract_data[cmp_value] + data[value]
             }
         }
     }
